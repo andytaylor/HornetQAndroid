@@ -1,70 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical"
-    style="@style/Layout">
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              style="@style/Layout">
 
     <ImageView
-        android:id="@+id/logo"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:src="@drawable/hornetqmessengerlogo" />
+            android:id="@+id/logo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/hornetqmessengerlogo"/>
 
     <TextView
-        android:id="@+id/username_label"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/logo"
-        android:paddingLeft="5dp"
-        android:textColor="@color/textColor"
-        android:text="@string/username" />
+            android:id="@+id/username_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:paddingLeft="5dp"
+            android:textColor="@color/textColor"
+            android:text="@string/username"/>
 
     <EditText
-        android:id="@+id/username"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/username_label" >
-        <requestFocus />
-	</EditText>
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_label">
+        <requestFocus/>
+    </EditText>
 
     <TextView
-        android:id="@+id/password_label"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/username"
-        android:paddingLeft="5dp"
-        android:textColor="@color/textColor"
-        android:text="@string/password" />
+            android:id="@+id/password_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:paddingLeft="5dp"
+            android:textColor="@color/textColor"
+            android:text="@string/password"/>
 
     <EditText
-        android:id="@+id/password"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/password_label"
-        android:inputType="textPassword" />
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_label"
+            android:inputType="textPassword"/>
 
     <TextView
-        android:id="@+id/url_label"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/password"
-        android:paddingLeft="5dp"
-        android:textColor="@color/textColor"
-        android:text="@string/url" />
+            android:id="@+id/host_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:paddingLeft="5dp"
+            android:textColor="@color/textColor"
+            android:text="@string/host"/>
 
     <EditText
-        android:id="@+id/url"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/url_label" />
+            android:id="@+id/host"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/host_label"/>
+
+    <TextView
+            android:id="@+id/port_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/host"
+            android:paddingLeft="5dp"
+            android:textColor="@color/textColor"
+            android:text="@string/port"/>
+
+    <EditText
+            android:id="@+id/port"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/port_label"/>
 
     <Button
-        android:id="@+id/login"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/login" />
+            android:id="@+id/login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"/>
 
 </LinearLayout>

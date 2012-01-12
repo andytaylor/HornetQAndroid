@@ -1,2 +1,4 @@
 bin/*
 *.apk
+.idea
+HornetQAndroid.iml

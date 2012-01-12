@@ -3,7 +3,8 @@
     <string name="app_name">HornetQ Messenger</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
-    <string name="url">URL</string>
+    <string name="host">host</string>
+    <string name="port">port</string>
     <string name="remember">Remember Me</string>
     <string name="login">Login</string>
     <string name="send">Send</string>
